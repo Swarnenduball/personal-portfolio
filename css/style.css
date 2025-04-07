@@ -1,0 +1,820 @@
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1,p,h2,h3,a{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+hr{
+  margin: 5rem 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+nav{
+    padding: 3rem;
+    box-shadow:  0 0 1px 0 black;
+}
+nav span{
+   
+        font-size: 1.3rem;
+        color: #d92cf9;
+        font-weight: bold;
+        margin-bottom: 2rem;
+}
+nav ul{
+ position:absolute;
+ z-index: 1;
+ transition: .2s;
+ font-size: 1.2rem;
+ bottom:250rem ;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+    line-height: 2rem;
+
+}
+nav .icon .box{
+  border: 2px solid #d92cf9;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .icon i{
+    color: #d92cf9;
+    font-size: 2rem;
+    position:absolute;
+    overflow: hidden;
+  
+   
+}
+.vis{
+    position: relative;
+    bottom: 0;
+}
+
+/* nav .icon i::after{
+    content: '';
+    
+    position: absolute;
+
+    top: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    background-color: transparent;
+    border: rgb(158, 16, 16) px solid;
+} */
+nav .fp{
+ display: flex;
+ height: fit-content;
+ justify-content: space-between;
+ overflow: visible;
+}
+#x{
+    display: none;
+}
+.hero{
+  position: relative;
+  color: white;
+ 
+
+  height: 80VH;
+  width: 100VW;
+  background-image: url("/images/about/welcome-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  
+
+}
+.hero .txts{
+position: absolute;
+width: max-content;
+left: 50%;
+top: 40%;
+transform: translate(-40%,-50%);
+margin-top: 5rem;
+
+
+}
+
+.hero h1{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  width: 15rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  animation: first 1s ;
+  margin-left: 5rem;
+ 
+}
+.hero h1 span{
+  color: #d92cf9;
+  font-weight: 750;
+  word-wrap: normal;
+}
+.hero h1 .lft{
+  color: white;
+  transform: translate(-100px);
+}
+.hero h2{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: first 1s ;
+  letter-spacing: .5px;
+ 
+}
+.hero button{
+  background-color: #d92cf9;
+  color: white;
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 3px;
+  margin-left: 5rem;
+  font-size: 1rem;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(31, 44, 108, .65);
+  width: 100%;
+  height: 100%;
+}
+@keyframes first {
+
+   0%{
+     margin-bottom: 0;
+   }
+   100%{
+    margin-bottom: 3rem;
+   }
+}
+.about-me{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+  padding-left: 20px;
+}
+.about-me .left{
+  width: 100%;
+
+}
+.about-me .right{
+  width: 100%;
+  height: 70vh;
+  padding: 1rem;
+  
+  position: relative;
+}
+.right img{
+  width: 95%;
+  height:100%;
+}
+.about-me .left .tp {
+  margin-top: 5rem;
+}
+.about-me .left .tp h2{
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: .7;
+  margin-bottom: 4rem;
+}
+.about-me .left .tp p{
+  font-size: 1.1rem;
+  opacity: .5;
+  margin-bottom: 4rem;
+}
+.about-me .left .ip {
+  margin-top: 2rem;
+}
+.about-me .left .ip .box{
+  margin-bottom: 3rem;
+}
+.about-me .left .ip .box span{
+  font-size: 1.3rem;
+  opacity: .6;
+ 
+}
+.about-me .left .ip .box p{
+  font-size: 1.3rem;
+  opacity: .5;
+}
+.right .icons{
+  position:absolute;
+ margin-bottom: 1rem;
+left:   50%;
+transform: translate(-50%);
+  bottom: 0;
+  display: flex;
+  gap: 2rem;
+ 
+}
+
+  .right .icons i {
+  
+    font-size: 1rem; /* Increased for better visibility */
+ 
+  }
+  
+.right .icons .i{
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.edu{
+  height: 100%;
+  width: 100vw;
+  background-color: #f9fbfd;
+  padding: 2rem 0;
+}
+.edu h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.edu hr{
+  opacity: .5;
+}
+.edu .edu-timeline{
+
+  padding: 2rem;
+}
+.edu .edu-timeline .up{
+margin-bottom: 1.5rem;
+  overflow: visible;
+}
+.edu .edu-timeline .up h2{
+ font-size: 1.1rem;
+ opacity: .8;
+}
+.edu .edu-timeline .up h3{
+  font-size: 1.1rem;
+  opacity: .5;
+  position: relative;
+  overflow: visible;
+ }
+ .edu .edu-timeline .line {
+ 
+overflow: visible;
+
+ }
+ .edu .edu-timeline .line .circle{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+ display: inline-flex;
+ position: relative;
+ top: 5px;
+  background-color: #d92cf9;
+ }
+.line div{
+  background-color: #0000005c;
+  display: inline-flex;
+  width: 80%;
+  height: 1px;
+ }
+ .edu-timeline h3{
+  margin:1rem 0;
+ }
+ .edu .edu-timeline .low h2{
+ font-size: 1.2rem;
+ color: rgba(0, 0, 0, 0.73);
+ }
+ .edu .edspanu-timeline .low h3{
+  font-size: 1rem;
+
+  color: rgba(0, 0, 0, 0.639);
+  }
+ .low span{
+    font-size: 1rem;
+  opacity: .6;
+    color: rgb(22, 22, 22);
+    }
+    .skills h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 3rem;
+    }
+    .skills hr{
+      margin: 5rem 0;
+    }
+
+    .skills .skill_box .skill_wraper h2{
+      font-size: 1rem;
+      opacity: 0.7;
+      text-transform: uppercase;
+      word-spacing: 5px;
+      margin-bottom: 1rem;
+      position: relative;
+      
+    }
+    .skills .skill_box .skill_wraper{
+      width: 100%;
+    
+    }
+    .skills .skill_box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5rem;
+      padding: 2rem;
+      margin-left: 3rem;
+    }
+    .skills .skill_box .design_skills{
+      width: 100%;
+    }
+     .skills .skill_box .web_skills{
+      width: 100%;
+    }
+    
+    .skills .skill_box .skill_wraper .pogress{
+      width: 100%;
+      display: flex;
+      
+      gap: 1rem;
+    }
+    .skills .skill_box .skill_wraper h3{
+      color: #b636ff;
+      font-weight: 600;
+    }
+    .skills .skill_box .skill_wraper .pogress .pbox{
+     width: 80%;
+     height: 8px;
+     background-color: #E6ECF3;
+     border-radius:  40px;
+     margin-top: .7rem;
+    }
+    .skills .skill_box .skill_wraper .pogress .pbox #one{
+      height: 100%;
+      width: 90%;
+      border-radius:  40px;
+      background-color: #b636ff;
+      animation: bar   1s ease-in ;
+    
+    }
+    .skills .skill_box .skill_wraper .pogress .pbox #two{
+      height: 100%;
+      width: 85%;
+      border-radius:  40px;
+      background-color: #b636ff;
+      animation: bar   1s ease-in ;
+    }
+    .skills .skill_box .skill_wraper .pogress .pbox #three{
+      height: 100%;
+      width: 97%;
+      border-radius:  40px;
+      background-color: #b636ff;
+      animation: bar   1s ease-in ;
+      
+    }
+    .skills .skill_box .skill_wraper .pogress .pbox #four{
+      height: 100%;
+      width: 90%;
+      border-radius:  40px;
+      background-color: #b636ff;
+      animation: bar   1s ease-in ;
+    }
+    @keyframes bar{
+      0%{
+        width: 0%;
+      }
+      100%{
+        width: 100%;
+      }
+    }
+
+    .experience{
+      width: 100%;
+      height: 100%;
+    }
+    .experience h1{
+     text-transform: uppercase;
+     text-align:center;
+    }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+/* for tablet----------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width:480px ) and (max-width:768px){
+
+  
+  .about-me{
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .right{
+    width: 50%;
+  }
+  .left{
+    width: 50%;
+   
+  }
+  .right .icons{
+   
+   margin-bottom: 1.8rem;
+
+  }
+  .about-me .left .tp h2{
+   
+    margin-bottom: 2rem;
+  }
+  .about-me .left .tp p{
+   
+    margin-bottom: 2rem;
+  }
+  .about-me .left .ip {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+  .about-me .left .ip .box span{
+    font-size: 1rem;
+ 
+   
+  }
+  .about-me .left .ip .box p{
+    font-size: 1rem;
+   
+  }
+  .edu .edu-cont{
+    display: flex;
+    flex-wrap: nowrap;
+ 
+  }
+  .line div{
+    background-color: #0000005c;
+    display: inline-flex;
+    width: 80%;
+    height: 1px;
+   }
+}
+/* for laptop---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+@media (min-width:769px ) and (max-width:1024px){
+  nav .icon{
+    display: none;
+  }
+  nav{
+    padding-right:.5px ;
+  }
+  nav ul {
+    position: relative;
+   top: 0;
+   display: flex;
+  font-size: 1.1rem;
+   gap: 1.5rem;
+  }
+  nav .content{
+    display: flex;
+    gap: 3rem;
+  } 
+  nav ul a{
+    color: #6f6f6f;
+    transition: .5s;
+  }     
+  nav a:hover{
+    color: #d92cf9;
+  }
+  .about-me{
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .right{
+    width: 50%;
+  }
+  .left{
+    width: 50%;
+   
+  }
+  .right .icons{
+   
+   margin-bottom: 1.8rem;
+
+  }
+  .about-me .left .tp h2{
+   
+    margin-bottom: 2rem;
+  }
+  .about-me .left .tp p{
+   
+    margin-bottom: 2rem;
+  }
+  .about-me .left .ip {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+  .about-me .left .ip .box span{
+    font-size: 1rem;
+ 
+   
+  }
+  .about-me .left .ip .box p{
+    font-size: 1rem;
+   
+  }
+  .edu .edu-cont{
+    display: flex;
+    flex-wrap: nowrap;
+ 
+  }
+  .line div{
+    background-color: #0000005c;
+    display: inline-flex;
+    width: 80%;
+    height: 1px;
+   }
+   .skills .skill_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem;
+    padding: 2rem;
+    
+  }
+  .skills .skill_box .design_skills{
+    width: 50%;
+  }
+   .skills .skill_box .web_skills{
+    width: 50%;
+  }
+  
+
+       
+    
+    
+    
+}
+/* for desktop--------------------------------------------------------------------------------------------------------- */
+@media  (min-width:1025px){
+    nav span{
+     float: left;
+     font-size: 1.3rem;
+     margin-right: 15rem;
+    }
+    nav .icon{
+        display: none;
+      }
+      nav{
+        padding-right:.5px ;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        
+      }
+      nav ul {
+        position: relative;
+        overflow: visible;
+        margin-right: 5rem;
+       top: 0;
+       display: flex;
+      font-size: 1.3rem;
+       gap: 1.5rem;
+       text-align: center;
+       color: #6f6f6f;
+      }
+      nav span{
+        font-size: 1.8rem;
+      }
+      nav ul a{
+        color: #6f6f6f;
+        transition: .5s;
+      }
+      nav .content{
+        display: inline-flex;
+     
+        margin-left: 10rem;
+      }   
+      nav a:hover{
+        color: #d92cf9;
+      }  
+      
+      
+      .hero h1{
+       
+        margin-left: 12rem;
+        font-size: 4.5rem;
+        width: 20rem;
+        overflow: visible;
+      } 
+      .hero{
+        height: 90vh;
+      }
+      .hero h1 .lft{
+       text-align: center;
+      }
+
+      .hero .txts button{
+        margin-left: 12rem;
+        height: 5rem;
+  width: 15rem;
+  font-size: 1.2rem;
+      }
+      .hero h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        animation: first 1s ;
+        letter-spacing: 1px;
+        margin-left: 2rem;
+       
+      }
+      .hero .txts {
+        left: 45%;
+top: 40%;
+transform: translate(-40%,-45%);
+      }
+      .about-me{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .right{
+        width: 50%;
+        overflow: hidden;
+      }
+      .left{
+        width: 50%;
+        padding: 3rem;
+       
+      }
+      .right .icons{
+        position:absolute;
+        margin-bottom: 1rem;
+       left:   40%;
+       transform: translate(-50%);
+         bottom: 0;
+         display: flex;
+         gap: 2rem;
+         
+       margin-bottom: 1.8rem;
+    
+      }
+      .right .icons i{
+        font-size: 1.2rem;
+      }
+      .right .icons .i{
+        border-radius: 8px;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 3px solid white;
+      }
+      .about-me .left .tp{
+        margin-top: 0;
+      }
+      .about-me .left .tp h2{
+       font-size: 1.8rem;
+       word-spacing: 5px;
+       line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+      .about-me .left .tp p{
+        font-size: 1.2rem;
+      
+       
+      }
+      .about-me .left .ip {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10rem;
+      }
+      .about-me .left .ip .box span{
+        font-size: 2rem;
+     
+       
+      }
+      .about-me .left .ip .box p{
+        font-size: 1rem;
+       
+      }
+      .right img{
+        width: 80%;
+        height:100%;
+      }
+      .about-me .left .ip .box span{
+        font-size: 1.7rem;   
+        font-weight: 550;    
+      }
+      .about-me .left .ip .box p{
+        font-size: 1.3rem;
+        opacity: .5;
+      }
+      .edu{
+        height: 80vh;
+        width: 100vw;
+        background-color: #f9fbfd;
+        padding: 2rem 0;
+      }
+      .edu h1{
+        font-weight: 500;
+      }
+       .edu-cont{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 4rem;
+        margin-top: 5rem;
+      
+     
+      }
+      .line div{
+        background-color: #0000005c;
+        display: inline-flex;
+        width: 80%;
+        height: 1px;
+       }
+       .edu .edu-timeline .up{
+        margin-bottom: 2rem;
+          overflow: visible;
+        }
+        .edu .edu-timeline .up h2{
+         font-size: 1.3rem;
+         opacity: .8;
+        }
+        .edu .edu-timeline .up h3{
+          font-size: 1.5rem;
+          opacity: .5;
+          position: relative;
+          overflow: visible;
+         }
+      
+      
+       
+        
+          .low h2{
+         font-size: 1.2rem;
+         color: rgba(0, 0, 0, 0.73);
+         }
+          .low h3{
+          font-size: 1.5rem;
+          color: rgba(0, 0, 0, 0.448);
+          }
+          .low span{
+            font-size: 1.5rem;
+            color: rgba(0, 0, 0, 0.639);
+            }
+            .skills .skill_box {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0rem;
+              padding: 2rem;
+              
+            }
+            .skills .skill_box .design_skills{
+              width: 50%;
+            }
+             .skills .skill_box .web_skills{
+              width: 50%;
+            }
+            .skills .skill_box .skill_wraper h2{
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            .skills .skill_box .skill_wraper .pogress .pbox{
+             width: 80%;
+             height: 12px;
+             
+           
+            }
+            .skills .skill_box .skill_wraper .pogress{
+              margin:2rem 0;
+            }
+            
+    }
