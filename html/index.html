@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>BROWNY</title>
 </head>
 <body>
@@ -345,6 +346,7 @@
     <h2>profile</h2>
     <hr>
     <div class="profile-cont">
+        <div class="row">
          <div class="prof">
             <div class="lgo"><img src="/images/logo/themeforest.png" alt="theme forest logo"></div>
             <span>themeforest</span>
@@ -356,21 +358,98 @@
          </div>
          <!-- space ---------------------------------------->
          <div class="prof">
-            <div class="lgo"><i class="fa-brands fa-behance"></i></i></div>
+            <div class="lgo"><i class="fa-brands fa-behance"></i></div>
             <span>behance</span>
          </div>
          <!-- space ---------------------------------------->
-         <div class="prof">
-            <div class="lgo"><i class="fa-brands fa-github"></i></div>
+         <div class="prof" id="last">
+            <div class="lgo" ><i class="fa-brands fa-github" id></i></div>
             <span>Git hub</span>
          </div>
+        </div>
+        <div class="row">
          <!-- space ---------------------------------------->
-         <div class="prof">
-            <div class="lgo"><i class="fa-regular fa-basketball"></i></div>
-            <span>Dribble</span>
+         <div class="prof btm" >
+            <div class="lgo"><i class="fa-brands fa-flickr"></i></div>
+            <span>Flickr</span>
+         </div>
+         <div class="prof btm"  >
+            <div class="lgo"><i class="fa-brands fa-squarespace"></i></div>
+            <span>squarespace</span>
          </div>
 
+         <!-- space ---------------------------------------->
+         <div class="prof btm " >
+            <div class="lgo"><img src="/images/logo/smungMung.png" alt="smungMung logo"></div>
+            <span>smungMung</span>
+         </div>
+          <!-- space ---------------------------------------->
+          <div class="prof btm"   id="last">
+            <div class="lgo" ><i class="fa-brands fa-bitbucket"></i></div>
+            <span>bitbucket</span>
+         </div>
+        </div>
+
     </div>
+</div>
+
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- start of portfolio  ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="portfolio">
+    <hr>
+    <h2>portfolio</h2>
+    <hr>
+    <div class="prow">
+        
+    <div class="lc"> <div class="dlc"><img src="/images/portfolio/p1.jpg" alt="image p1"></div>
+      <div class="dlc">  <img src="/images/portfolio/p2.jpg" alt="image p2"></div> </div>
+    <div class="mc">    <div class="dmc"><img src="/images/portfolio/p3.jpg" alt="image p3"></div></div>
+    <div class="rc">
+        
+        <div class="drc"> <img src="/images/portfolio/p4.jpg" alt="image p4"></div>
+        <div class="drc"><img src="/images/portfolio/p5.jpg" alt="image p5"> </div></div>
+</div>
+</div>
+  <!-- start o clients --------------------------------------------------------------->
+ <!-- start o clients --------------------------------------------------------------->
+
+ <!-- start o clients --------------------------------------------------------------->
+ <!-- start o clients --------------------------------------------------------------->
+ <!-- start o clients --------------------------------------------------------------->
+ <!-- start o clients --------------------------------------------------------------->
+ <!-- start o clients --------------------------------------------------------------->
+
+<div class="clients">
+    <hr>
+    <h2>Clients</h2>  <hr>    <div class="slider" onclick="slid()">
+        <div class="item"><img src="/images/clients/c1.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c2.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c3.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c4.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c5.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c6.png" alt="clientPIC"></div>
+        <div class="item"><img src="/images/clients/c7.png" alt="clientPIC"></div>
+    </div>
+  
+
+  
 </div>
 
 
@@ -435,14 +514,22 @@
 
 
 
-
-
-
-
-
-
     <script src="/js/app.js">
-        
+
     </script>
+    <script src="/js/clint.js"></script>
+       <script> 
+      
+       ScrollReveal().reveal('.pbar', 
+       {
+        duration:500,
+        distance: '500px' ,
+        origin: 'left',
+        delay:100,
+       easing:'ease-in-out'
+    }
+    
+    );
+       </script>
 </body>
 </html>
