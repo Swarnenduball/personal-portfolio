@@ -19,9 +19,45 @@ h1,p,h2,h3,a,h4,h5,h6{
 hr{
   margin: 5rem 0;
 }
+
+
+
+.abd-circle{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: #b636ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  overflow: h;
+
+}
+.abd-circle i{
+  animation:  up 2s infinite;
+  
+
+}
+
+@keyframes  up {
+  from{
+    transform: translateY(.5rem);
+  }
+  to{
+    transform: translateY(-.5rem);
+  }
+  
+}
 a{
   text-decoration: none;
   color: white;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 nav{
     padding: 3rem;
@@ -91,6 +127,11 @@ nav .fp{
  height: fit-content;
  justify-content: space-between;
  overflow: visible;
+}
+nav .fp span{
+  position: relative;
+  bottom: 1rem;
+  
 }
 #x{
     display: none;
@@ -653,13 +694,78 @@ overflow: visible;
   text-align: center;
     position: relative;
     left: 50%;
-    transform: translate(-50% )
+    transform: translate(-50% );
   }
-  @keyframes autoslid{
+  .contact h2{
+    text-align: center;
+  
+    text-transform: uppercase;
+  }
+  .contact{
+    background-color: #f9fbfd;
+    margin-top: 5rem;
+  }
+  .contact .middle-pt{
+    padding: 2rem;
+    display: inline-block;
+  }
+  .contact .middle-pt input[type="text"]{
+    background-color: white;
+    height: 2.8rem;
+    width: 22rem;
+    border: none;
+    margin: 20px 0;
+   
+  }
+  .contact .middle-pt input[type="text"]::placeholder{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.385);
+    opacity: .5;
+  }
+  .contact .middle-pt textarea{
+    resize: none;
+    height: 12rem;
+    width: 22rem;
+    background-color: white;
+    border: none;
+  }
+  .contact .middle-pt textarea::placeholder{
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.385);
+    opacity: .5;
+  }
+  .contact .middle-pt button{
+    resize: none;
+    height: 2.8rem;
+    width: 22rem;
+    background-color: #d636ff;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+ 
+  .p-details h3{
+   font-weight: 500;
+   font-size: 1.5rem;
+   
+  }
+  .p-details p{
+    opacity: 0.8;
+  }
 
-    from{
-      ta
-    }
+  .p-details .text-details .box {
+   margin: 5px 0;
+  }
+  .p-details .text-details .box span{
+    font-size: 1.2rem;
+  }
+  .p-details .text-details .icons i {
+    font-size: 18rem;
+  }
+  .p-details p,span,h3{
+    margin: 2rem 0;
   }
 
 
@@ -667,9 +773,9 @@ overflow: visible;
 
 
 
-
-
-
+/* for tablet---------------------------------------------
+/* for tablet---------------------------------------------
+/* for tablet---------------------------------------------
 /* for tablet----------------------------------------------------------------------------------------------------------------------------- */
 @media (min-width:480px ) and (max-width:768px){
 
@@ -834,6 +940,27 @@ overflow: visible;
     
     
      }
+     .contact h2{
+      font-size: 2.5rem;
+     }
+     .contact .middle-pt{
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      width: 100vw;
+    }
+    .contact .middle-pt .p-details{
+      width: 50%;
+    }
+    .contact .middle-pt .fs{
+      width: 50%;
+    }
+    nav .fp span{
+      position: relative;
+      bottom: 1rem;
+      
+    }
+
 
 
 
@@ -1070,6 +1197,31 @@ text-align: end;
 
 
  }
+ .contact h2{
+  font-size: 3rem;
+ }
+ .contact h2{
+  font-size: 2.5rem;
+ }
+ .contact .middle-pt{
+  padding: 0 6rem ;
+  display: flex;
+  /* gap: 2rem; */
+  width: 100vw;
+  justify-content: center;
+}
+.contact .middle-pt .p-details{
+  width: 50%;
+}
+.contact .middle-pt .fs{
+  width: 50%;
+}
+nav .fp span{
+  position: relative;
+  bottom: 1.9rem;
+  
+}
+
 
 
 
@@ -1443,13 +1595,117 @@ transform: translate(-40%,-45%);
           .clients .item{
             display: inline-block;
             position: relative;
-           width: 15vw;
+           width: 20vw;
           
           /* justify-content: center; */
            
           
           
            }
+          
+           .clients .slider{
+            
+             
+             width: 80vw;
+           
+             position: relative;
+             left: 50%;
+             transform: translate(-50%);
+            }
+            .contact h2{
+              font-size: 2.5rem;
+             }
+             h2{
+              font-size: 2.5rem;
+             }
+             .contact h2{
+              font-size: 3rem;
+             }
+             .contact h2{
+              font-size: 2.5rem;
+             }
+             .contact .middle-pt{
+              padding: 0 10rem ;
+              display: flex;
+              /* gap: 2rem; */
+              width: 100vw;
+              justify-content: center;
+            }
+            .contact .middle-pt .p-details{
+              width: 50%;
+            }
+            .contact .middle-pt .fs{
+              width: 50%;
+            }
+            .p-details h3{
+              font-weight: 500;
+              font-size: 1.8rem;
+              
+             }
+             .p-details{
+              opacity: .7;
+             }
+             .p-details p{
+               opacity: 0.7;
+               font-size: 1.2rem;
+             }
+           
+             .p-details .text-details .box {
+              margin: 5px 0;
+             }
+             .p-details .text-details .box span{
+               font-size: 1.5rem;
+               text-transform: capitalize;
+             }
+            .contact i {
+               
+               margin-right:  1rem ;
+             }
+             .p-details p,span,h3{
+               margin: 2rem 0;
+             }
+             .contact .middle-pt textarea{
+              resize: none;
+              height: 11rem;
+              width: 40rem;
+              background-color: white;
+              border: none;
+              margin-bottom: 2REM;
+              text-align: start;
+            }
+            .contact .middle-pt #subject{
+          margin: 0 5rem ;
+          margin-left: 0;
+          width: 40rem;
+          margin-bottom: 2rem;
+          
+            }
+            .contact .middle-pt input[type="text"]{
+              background-color: white;
+              height: 4rem;
+              width: 20rem;
+              border: none;
+              margin: 20px 0;
+             
+            }
+            .contact .middle-pt button{
+              width:40rem ;
+              height: 4rem;
+            }
+            .p-details H3{
+              margin: 0;
+            }
+            .p-details H3+p{
+              margin-top: 0;
+            }
+            nav .fp span{
+              position: relative;
+              bottom: 2rem;
+              
+            }
+        
+            
+           
          
        
         
