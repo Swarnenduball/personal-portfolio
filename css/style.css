@@ -143,7 +143,7 @@ nav .fp span{
 
   height: 80VH;
   width: 100VW;
-  background-image: url("/images/about/welcome-banner.jpg");
+  background-image: url("images/about/welcome-banner.jpg");
   background-size: cover;
   background-position: center;
   
