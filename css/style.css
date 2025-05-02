@@ -37,6 +37,9 @@ hr{
   overflow: h;
 
 }
+.content{
+  position: sticky;
+}
 .abd-circle i{
   animation:  up 2s infinite;
   
@@ -62,7 +65,7 @@ body::-webkit-scrollbar{
 nav{
     padding: 3rem;
     box-shadow:  0 0 1px 0 black;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
     
@@ -81,6 +84,7 @@ nav ul{
  transition: .2s;
  font-size: 1.2rem;
  bottom:250rem ;
+ 
 }
 nav ul a{
     color: black;
@@ -143,7 +147,7 @@ nav .fp span{
 
   height: 80VH;
   width: 100VW;
-  background-image: url("images/about/welcome-banner.jpg");
+  background-image: url("/images/about/welcome-banner.jpg");
   background-size: cover;
   background-position: center;
   
